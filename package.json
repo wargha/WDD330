@@ -1,0 +1,24 @@
+{
+  "name": "wdd330",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "node-sass --watch scss -o styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwargha/WDD330.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwargha/WDD330/issues"
+  },
+  "homepage": "https://github.com/lwargha/WDD330#readme"
+}
