@@ -39,6 +39,7 @@ let objArr = ["lucas", "wargha", 2]; // it also works!! :)
 for (var prop in object) {
 }
 
+// generator obhect, mind blowing!!
 function* gen() {
   yield 1;
   yield 2;
