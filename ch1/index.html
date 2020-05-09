@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CH1</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container col wrap-challenge1">
+      <h3 class="title">To do's</h3>
+      <div id="todos" class="container col wrap-todos"></div>
+      <div class="container row wrap-report">
+        <span class="tasks-left">3 tasks left</span>
+        <div class="container row filters">
+          <div
+            onclick="changeFilter(event, 'all')"
+            class="container single-filter"
+          >
+            <span>All</span>
+          </div>
+          <div
+            onclick="changeFilter(event, 'active')"
+            class="container single-filter"
+          >
+            <span>Active</span>
+          </div>
+          <div
+            onclick="changeFilter(event, 'completed')"
+            class="container single-filter"
+          >
+            <span>Done</span>
+          </div>
+        </div>
+      </div>
+      <div class="container row add-new-task"></div>
+    </div>
+
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"
+    ></script>
+    <script defer src="./db.js"></script>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
