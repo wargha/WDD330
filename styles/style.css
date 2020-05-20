@@ -247,6 +247,9 @@ footer {
       font-size: 20px;
       margin-top: auto;
       margin-bottom: auto; }
+    .wrap-challenge1 .wrap-todos .single-todo .task-name.completed {
+      text-decoration: line-through;
+      color: red; }
     .wrap-challenge1 .wrap-todos .single-todo .remove-task {
       font-size: 22px;
       margin-top: auto;
@@ -267,10 +270,31 @@ footer {
       cursor: pointer;
       margin-right: 15px;
       width: 80px;
-      border-radius: 6px; }
-      .wrap-challenge1 .wrap-report .filters .single-filter span {
-        margin: auto; }
+      border-radius: 6px;
+      display: flex;
+      justify-content: center; }
     .wrap-challenge1 .wrap-report .filters .single-filter:hover,
-    .wrap-challenge1 .wrap-report .filters .single-filter.active {
+    .wrap-challenge1 .wrap-report .filters .single-filter.active-filter {
       background: #555;
       color: white; }
+  .wrap-challenge1 .add-new-task {
+    margin-top: 30px; }
+    .wrap-challenge1 .add-new-task input {
+      height: 25px;
+      width: 200px;
+      border-radius: 4px; }
+    .wrap-challenge1 .add-new-task input::placeholder {
+      font-size: 18px; }
+    .wrap-challenge1 .add-new-task #submitNewTask {
+      margin-left: 20px;
+      border: 1px solid #555;
+      width: 25px;
+      height: 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 20px; }
+    .wrap-challenge1 .add-new-task #submitNewTask:hover {
+      color: white;
+      background: #555; }
+    .wrap-challenge1 .add-new-task .hidden {
+      display: none; }

@@ -15,25 +15,34 @@
         <div class="container row filters">
           <div
             onclick="changeFilter(event, 'all')"
-            class="container single-filter"
+            class="container single-filter active-filter"
           >
-            <span>All</span>
+            All
           </div>
           <div
             onclick="changeFilter(event, 'active')"
             class="container single-filter"
           >
-            <span>Active</span>
+            Active
           </div>
           <div
             onclick="changeFilter(event, 'completed')"
             class="container single-filter"
           >
-            <span>Done</span>
+            Done
           </div>
         </div>
       </div>
-      <div class="container row add-new-task"></div>
+      <div class="container row add-new-task">
+        <input
+          type="text"
+          name=""
+          id="new-task-input"
+          placeholder="Task Name Here"
+          oninput="validateInput()"
+        />
+        <button onclick="addTask()" id="submitNewTask" class="container center hidden">+</buttpn>
+      </div>
     </div>
 
     <script

@@ -27,6 +27,10 @@
         margin-top: auto;
         margin-bottom: auto;
       }
+      .task-name.completed {
+        text-decoration: line-through;
+        color: red;
+      }
       .remove-task {
         font-size: 22px;
         margin-top: auto;
@@ -55,15 +59,42 @@
         margin-right: 15px;
         width: 80px;
         border-radius: 6px;
-        span {
-          margin: auto;
-        }
+        // text-align: center;
+        display: flex;
+        justify-content: center;
       }
       .single-filter:hover,
-      .single-filter.active {
+      .single-filter.active-filter {
         background: #555;
         color: white;
       }
+    }
+  }
+  .add-new-task {
+    margin-top: 30px;
+    input {
+      height: 25px;
+      width: 200px;
+      border-radius: 4px;
+    }
+    input::placeholder {
+      font-size: 18px;
+    }
+    #submitNewTask {
+      margin-left: 20px;
+      border: 1px solid #555;
+      width: 25px;
+      height: 25px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    #submitNewTask:hover {
+      color: white;
+      background: #555;
+    }
+    .hidden {
+      display: none;
     }
   }
 }
