@@ -1,7 +1,7 @@
-var tasksRef = db.collection("tasks");
-var currentTasks = [];
-var activeFilter = "all";
-
+let tasksRef = db.collection("tasks");
+let currentTasks = [];
+let activeFilter = "all";
+let tasksLeft = 0;
 window.onload = loadTasks();
 
 function loadTasks() {
@@ -23,7 +23,9 @@ function loadTasks() {
 
 const updateTasks = () => {
   document.getElementById("todos").innerHTML = ""; //need to reset html so the container can receive new data without repeating it
+  let count = 0;
   currentTasks.forEach((task) => {
+    if (!task.completed) count++;
     if (activeFilter === "completed" && !task.completed) {
       return;
     } else if (activeFilter === "active" && task.completed) {
@@ -42,6 +44,7 @@ const updateTasks = () => {
 </div>`
     );
   });
+  document.getElementById("tasks-left").innerText = count;
 };
 
 const toggleState = (id) => {

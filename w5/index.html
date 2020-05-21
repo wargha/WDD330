@@ -3,26 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week 02</title>
+    <title>Week 05</title>
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <div class="container col wrap-notes-questions">
-      <h3 class="title">Week 2</h3>
+      <h3 class="title">Week 5</h3>
       <span class="topic">Questions</span>
       <ol>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          Como fazer end to end testing se especialmente UI esta sempre mudando?
+          Me parece que nao e muito effective ter end to end testing for UI
+          apps.
+        </li>
+        <li>Quando voce usaria manual mocks usando jest?</li>
+        <li>
+          Sera que e necessario test coverage de 100% das linhas de codigo? Nao
+          existem coisas que podem ser redundant?
+        </li>
       </ol>
       <span class="topic">Notes</span>
       <ol>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          End to end testing podem slow down o processo de CI/CD porque SaaS
+          applications, especialmente, mudam muito.
+        </li>
+        <li>
+          Usando o Jest, percebi que fazer mocks de axios e muito facil.
+          Jest.fn()...
+        </li>
+        <li>
+          jest tem tido algumas dificuldades de conectar com babel frameworks
+          para compatibilidade de novas features ES6.
+        </li>
+        <li>
+          wrapping async calls on call catch statements ajuda demais! usando
+          promises / async features ES5/ES6 tambem com debugging and testing.
+          adios callbacks
+        </li>
       </ol>
       <div class="container team-activity">
-        <a href="./team.html">Team Activity</a>
+        <!-- <a href="./team.html">Team Activity</a> -->
       </div>
     </div>
   </body>
