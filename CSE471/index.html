@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storyboard Stopwatch</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container center col wrap-storyboard">
+      <h3 class="title">Storyboard - Stopwatch</h3>
+      <div class="container row single-story-board">
+        <div class="container wrapper col">
+          <span class="story-number-description container row"
+            ><span class="number"> 1</span>
+            <span class="description"
+              >Base State - the app was just opened. The default tab for our
+              clock is the adult tab. Time is at 0 and all 3 buttons show up
+              right below it
+            </span></span
+          >
+          <div class="container col storyboard">
+            <div class="container row tabs">
+              <div class="adult active option container">
+                <span> Adult</span>
+              </div>
+              <div class="kids option container"><span> Kids</span></div>
+            </div>
+            <div class="wrap-clock container col center">
+              <span class="time">00:00:00.00</span>
+              <img class="clock-img" src="./clock.jpg" alt="" />
+            </div>
+            <div class="container wrap-buttons">
+              <div class="wrap-btn active">
+                <div class="btn start">Start</div>
+              </div>
+              <div class="btn reset">Reset</div>
+              <div class="btn stop">Stop</div>
+            </div>
+          </div>
+        </div>
+        <div class="container wrapper col">
+          <span class="story-number-description container row"
+            ><span class="number"> 2</span>
+            <span class="description"
+              >After the start button is pressed, and a few seconds go by, the
+              time will look like this.
+            </span></span
+          >
+          <div class="container col storyboard">
+            <div class="container row tabs">
+              <div class="adult active option container">
+                <span> Adult</span>
+              </div>
+              <div class="kids option container"><span> Kids</span></div>
+            </div>
+            <div class="wrap-clock container col center">
+              <span class="time">00:00:12.04</span>
+              <img class="clock-img" src="./clock.jpg" alt="" />
+            </div>
+            <div class="container wrap-buttons">
+              <div class="btn start">Start</div>
+              <div class="btn reset">Reset</div>
+              <div class="btn stop">Stop</div>
+            </div>
+          </div>
+        </div>
+        <div class="container wrapper col">
+          <span class="story-number-description container row"
+            ><span class="number"> 3</span>
+            <span class="description">
+              Now, we have the timer with 12ish seconds. If we press stop and
+              wait a few seconds, the timer shall not change no longer.
+            </span></span
+          >
+          <div class="container col storyboard">
+            <div class="container row tabs">
+              <div class="adult active option container">
+                <span> Adult</span>
+              </div>
+              <div class="kids option container"><span> Kids</span></div>
+            </div>
+            <div class="wrap-clock container col center">
+              <span class="time">00:00:12.04</span>
+              <img class="clock-img" src="./clock.jpg" alt="" />
+            </div>
+            <div class="container wrap-buttons">
+              <div class="btn start">Start</div>
+              <div class="btn reset">Reset</div>
+              <div class="wrap-btn active">
+                <div class="btn stop">Stop</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container wrapper col">
+          <span class="story-number-description container row"
+            ><span class="number"> 4</span>
+            <span class="description">
+              Now we the user will reset the timer by clicking the reset button.
+            </span></span
+          >
+          <div class="container col storyboard">
+            <div class="container row tabs">
+              <div class="adult active option container">
+                <span> Adult</span>
+              </div>
+              <div class="kids option container"><span> Kids</span></div>
+            </div>
+            <div class="wrap-clock container col center">
+              <span class="time">00:00:12.04</span>
+              <img class="clock-img" src="./clock.jpg" alt="" />
+            </div>
+            <div class="container wrap-buttons">
+              <div class="btn start">Start</div>
+              <div class="wrap-btn active">
+                <div class="btn reset">Reset</div>
+              </div>
+
+              <div class="btn stop">Stop</div>
+            </div>
+          </div>
+        </div>
+        <div class="container wrapper col">
+          <span class="story-number-description container row"
+            ><span class="number"> 5</span>
+            <span class="description">
+              The timer goes back to 0 and does not run until the user presses
+              start again
+            </span></span
+          >
+          <div class="container col storyboard">
+            <div class="container row tabs">
+              <div class="adult active option container">
+                <span> Adult</span>
+              </div>
+              <div class="kids option container"><span> Kids</span></div>
+            </div>
+            <div class="wrap-clock container col center">
+              <span class="time">00:00:00.00</span>
+              <img class="clock-img" src="./clock.jpg" alt="" />
+            </div>
+            <div class="container wrap-buttons">
+              <div class="btn start">Start</div>
+              <div class="btn reset">Reset</div>
+              <div class="wrap-btn">
+                <div class="btn stop">Stop</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container wrapper col">
+          <span class="story-number-description container row"
+            ><span class="number"> K</span>
+            <span class="description">
+              The kids' version follows the same pattern for any actions but
+              with a different image for the clock.
+            </span></span
+          >
+          <div class="container col storyboard">
+            <div class="container row tabs">
+              <div class="adult option container">
+                <span> Adult</span>
+              </div>
+              <div class="kids option active container"><span> Kids</span></div>
+            </div>
+            <div class="wrap-clock container col center">
+              <span class="time">00:00:00.00</span>
+              <img class="clock-img" src="./kids-clock.jpg" alt="" />
+            </div>
+            <div class="container wrap-buttons">
+              <div class="btn start">Start</div>
+              <div class="btn reset">Reset</div>
+              <div class="wrap-btn">
+                <div class="btn stop">Stop</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

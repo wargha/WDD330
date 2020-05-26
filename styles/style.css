@@ -298,3 +298,93 @@ footer {
       background: #555; }
     .wrap-challenge1 .add-new-task .hidden {
       display: none; }
+
+.wrap-storyboard {
+  margin-top: 80px; }
+  .wrap-storyboard .single-story-board {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 150px; }
+  .wrap-storyboard .wrapper {
+    margin-right: 20px; }
+  .wrap-storyboard .story-number-description {
+    width: 350px;
+    margin: 15px auto;
+    height: 70px; }
+    .wrap-storyboard .story-number-description .number {
+      min-width: 30px;
+      font-size: 30px;
+      text-align: center;
+      border: 1px solid black;
+      height: 35px;
+      margin-right: 20px; }
+  .wrap-storyboard .title {
+    font-size: 30px;
+    text-align: center; }
+  .wrap-storyboard .storyboard {
+    margin: 20px auto 0;
+    width: 350px;
+    height: 400px;
+    border: 1px solid #ccc; }
+    .wrap-storyboard .storyboard .tabs {
+      margin-bottom: 30px;
+      justify-content: space-evenly; }
+      .wrap-storyboard .storyboard .tabs .option {
+        height: 30px;
+        width: 50%;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        justify-content: center; }
+        .wrap-storyboard .storyboard .tabs .option span {
+          margin: auto;
+          cursor: pointer; }
+      .wrap-storyboard .storyboard .tabs .option.active {
+        background: lightgreen; }
+    .wrap-storyboard .storyboard .wrap-clock {
+      margin: 0 auto; }
+      .wrap-storyboard .storyboard .wrap-clock .time {
+        font-size: 30px;
+        text-align: center; }
+      .wrap-storyboard .storyboard .wrap-clock .clock-img {
+        width: 200px;
+        height: auto;
+        margin-top: 30px; }
+    .wrap-storyboard .storyboard .wrap-buttons {
+      margin-top: 30px;
+      justify-content: space-evenly; }
+      .wrap-storyboard .storyboard .wrap-buttons .wrap-btn.active {
+        border: 3px solid red;
+        animation: shadow-pulse 1s infinite;
+        border-radius: 8px; }
+      .wrap-storyboard .storyboard .wrap-buttons .btn {
+        font-size: 25px;
+        padding: 3px 7px;
+        border-radius: 6px;
+        cursor: pointer; }
+      .wrap-storyboard .storyboard .wrap-buttons .btn:hover {
+        opacity: 0.6; }
+      .wrap-storyboard .storyboard .wrap-buttons .stop {
+        background: red;
+        color: white; }
+      .wrap-storyboard .storyboard .wrap-buttons .reset {
+        background: lightgray; }
+      .wrap-storyboard .storyboard .wrap-buttons .start {
+        background: lightgreen; }
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 105, 0, 0.7); }
+  100% {
+    box-shadow: 0 0 0 15px rgba(255, 105, 0, 0); } }
+
+@keyframes opacity-rotation {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
