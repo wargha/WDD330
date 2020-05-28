@@ -10,6 +10,7 @@ tasksRef.where("completed", "==", false).onSnapshot(function (queryResults) {
 
 function loadTasks() {
   currentTasks = [];
+  console.log(currentTasks);
   tasksRef //vamos pegar as tasks da nossa db
     .get()
     .then((queryResults) => {
@@ -59,7 +60,6 @@ const toggleState = (id) => {
     .update({ completed: !completed })
     .then(() => {
       console.log("update feito com sucesso! : )");
-      loadTasks();
     });
 };
 
@@ -69,7 +69,6 @@ const deleteTask = (id) => {
     .delete()
     .then(() => {
       console.log("deletado com sucesso! : )");
-      loadTasks();
     });
 };
 
@@ -77,7 +76,6 @@ const addTask = () => {
   let name = document.getElementById("new-task-input").value;
   tasksRef.add({ name, completed: false }).then(() => {
     document.getElementById("new-task-input").value = "";
-    loadTasks();
   });
 };
 
