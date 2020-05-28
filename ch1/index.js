@@ -4,6 +4,10 @@ let activeFilter = "all";
 let tasksLeft = 0;
 window.onload = loadTasks();
 
+tasksRef.where("completed", "==", false).onSnapshot(function (queryResults) {
+  loadTasks();
+});
+
 function loadTasks() {
   currentTasks = [];
   tasksRef //vamos pegar as tasks da nossa db
